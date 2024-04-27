@@ -1,0 +1,34 @@
+.main{
+    display: flex;
+}
+.right{
+    width: 60%;
+}
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+}
+.head{
+    text-align: center;
+}
+@media(max-width: 900px) {
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .body{
+        margin: 30px;
+    }
+
+}
+@media (max-width: 500px) {
+    body {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      grid-template-rows: auto;
+      grid-gap: 10px;
+    }
+  }
